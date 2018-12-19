@@ -4,8 +4,43 @@
 	height: 450px;
 	margin: auto;
 	color: #FFFAF0;
+	padding: 16px;
 }
-#logForm legend{
+#logForm legend {
 	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 30px;
+	margin: 10px 0;
+}
+::placeholder {
+  color: #FFFAF0;
+  opacity: 1; /* Firefox */
+}
+#fname, #lname {	
+	width: 42%;
+	margin: 10px 0;
+	padding: 12px;
+	background-color: DarkSlateGray;
+	border: 2px solid #FFFAF0;
+    border-radius: 5px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFAF0;
+}
+#fname {
+	float: left;
+}
+#lname {
+	float: right;
+}
+#email, #password {
+	width: 100%;
+  	margin: 10px 0;
+  	display: inline-block;
+  	box-sizing: border-box;
+  	padding: 12px;
+  	border: 2px solid #FFFAF0;
+    border-radius: 5px;
+    background-color: DarkSlateGray;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFFAF0;	
 }
