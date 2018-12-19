@@ -1,5 +1,11 @@
 #logForm {
-	background-color: lightblue;
+	background-color: DarkSlateGray;
 	width: 450px;
 	height: 450px;
+	margin: auto;
+	color: #FFFAF0;
+}
+#logForm legend{
+	text-align: center;
+	font-size: 30px;
 }
