@@ -7,9 +7,9 @@
 </head>
 <body>
 	<div id="logForm">
-		<button type="button" id="signup" class="longButton">Sign Up</button>
-		<button  id="login" class="longButton unchecked" onclick="ShowLogin()">Log In</button>
-		<form name="signUpForm">
+		<button type="button" id="signup" class="longButton checked">Sign Up</button>
+		<button  type="button" id="login" class="longButton unchecked" onclick="ShowLogin()">Log In</button>
+		<form id="signUpForm" name="signUpForm" class="visible">
 			<legend>Sign Up for Free</legend>
 			<input type="text" id="fname" class="smallInput" name="fname" placeholder="First Name*"/>
 			<input type="text" id="lname" class="smallInput" name="lname" placeholder="Last Name*"/>
@@ -18,11 +18,11 @@
 			<input type="password" id="passwordcfm" class="input" name="passwordcfm" placeholder="Confirm password*"/>
 			<input type="submit" id="submit" class="input" name="submit" value="GET STARTED" />
 		</form>
-		<form name="loginForm" class="hidden">
+		<form id="loginForm" name="loginForm" class="hidden">
 			<legend>Log in</legend>
-			<input type="email" id="email" name="email" placeholder="Email"/>
-			<input type="password" id="password" name="password" placeholder="Password"/>
-			<input type="submit" id="submit" name="submit" value="Log in" />
+			<input type="email" id="email" class="input" name="email" placeholder="Email"/>
+			<input type="password" id="password" class="input" name="password" placeholder="Password"/>
+			<input type="submit" id="submit" class="input" name="submit" value="Log in" />
 		</form>
 	</div>
 	
