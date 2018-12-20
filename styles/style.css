@@ -16,7 +16,7 @@
   color: #FFFAF0;
   opacity: 1; /* Firefox */
 }
-#fname, #lname {	
+.smallInput {	
 	width: 42%;
 	margin: 10px 0;
 	padding: 12px;
@@ -32,7 +32,7 @@
 #lname {
 	float: right;
 }
-#email, #password, #passwordcfm {
+.input {
 	width: 100%;
   	margin: 10px 0;
   	display: inline-block;
@@ -45,19 +45,11 @@
     color: #FFFAF0;	
 }
 #submit {
-	width: 100%;
-  	margin: 10px 0;
-  	display: inline-block;
-  	box-sizing: border-box;
-  	padding: 12px;
   	border: 2px solid #0099ff;
-    border-radius: 5px;
     background-color: #0099ff;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: #FFFAF0;
     font-size: 30px;
 }
-#login, #signup {
+.longButton {
 	margin: 10px 0;
   	/*display: inline-block;*/
   	float: left;
@@ -69,4 +61,11 @@
     background-color: #0099ff;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #FFFAF0;
+}
+.hidden {
+	display: none;
+}
+.unchecked {
+	background-color: #437070;
+	border: 2px solid #437070;
 }
