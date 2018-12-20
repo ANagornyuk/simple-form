@@ -3,11 +3,12 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<script src="scripts/script.js"></script>
 </head>
 <body>
 	<div id="logForm">
 		<button type="button" id="signup" class="longButton">Sign Up</button>
-		<button type="button" id="login" class="longButton unchecked">Log In</button>
+		<button  id="login" class="longButton unchecked" onclick="ShowLogin()">Log In</button>
 		<form name="signUpForm">
 			<legend>Sign Up for Free</legend>
 			<input type="text" id="fname" class="smallInput" name="fname" placeholder="First Name*"/>
@@ -24,5 +25,6 @@
 			<input type="submit" id="submit" name="submit" value="Log in" />
 		</form>
 	</div>
+	
 </body>
 </html>
