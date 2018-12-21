@@ -1,6 +1,6 @@
 #logForm {
 	background-color: DarkSlateGray;
-	width: 400px;
+	max-width: 400px;
 	/*height: 450px;*/
 	margin: auto;
 	color: #FFFAF0;
