@@ -16,15 +16,25 @@ function ShowSignUp(){
 	
 }
 function ValidatePassword(){
-	document.getElementById('pswtip').className = "visible";
+	let pswtip = document.getElementById('pswtip');
+	let regexp = /\w{6,}/
+	//\d+|\w+{6,}/;
+	pswtip.className = "visible";
+	if (regexp.test(document.getElementById('password').value)){
+		pswtip.className = "hidden";
+	}
+	// pswtip.innerHTML = document.getElementById('password').value;
 
 	// let input = document.getElementById('password');
 	// input.title = "Some text"
-	// let regexp = /\w{6,}/;
+	
 
+
+}
+function ShowTip(){
+	document.getElementById('pswtip').className = "visible";
 
 }
 function HideTip(){
 	document.getElementById('pswtip').className = "hidden";
-
 }

@@ -24,11 +24,17 @@
 				   name="lname" placeholder="Last Name*" required/>
 			<input type="email" id="email" class="input" 
 				   name="email" placeholder="Email Address*" required/>
-			<input type="password" id="password" class="input tooltiptext" 
-				   name="password" placeholder="Set A Password*" 
-				   oninput="ValidatePassword()" onblur="HideTip()" 
-				    title="kkk" required/>
-			<span id="pswtip" class="hidden">Tooltip text</span>
+			<input type="password"
+					id="password"
+					class="input tooltiptext" 
+				   	name="password"
+				   	placeholder="Set A Password*" 
+				   	onfocus="ShowTip()" 
+				   	oninput="ValidatePassword()"
+				   	onblur="HideTip()" 
+				    title="kkk" 
+				    required/>
+			<span id="pswtip" class="hidden">Password length should be more then 6 characters.</span>
 			<input type="password" id="passwordcfm" class="input"
 				   name="passwordcfm" placeholder="Confirm password*" required/>
 			<input type="submit" id="submit" class="input"
