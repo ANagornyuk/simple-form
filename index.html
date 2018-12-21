@@ -29,14 +29,25 @@
 					class="input tooltiptext" 
 				   	name="password"
 				   	placeholder="Set A Password*" 
-				   	onfocus="ShowTip()" 
+				   	onfocus="ShowTip(pswtip)" 
 				   	oninput="ValidatePassword()"
-				   	onblur="HideTip()" 
+				   	
 				    title="kkk" 
 				    required/>
-			<span id="pswtip" class="hidden">Password length should be more then 6 characters.</span>
-			<input type="password" id="passwordcfm" class="input"
-				   name="passwordcfm" placeholder="Confirm password*" required/>
+			<span id="pswtip" class="hidden">
+				Password length should be more then 6 characters.
+			</span>
+			<input type="password"
+				   id="passwordcfm"
+				   class="input"
+				   name="passwordcfm"
+				   placeholder="Confirm password*"
+				   oninput="MatchPassword()"
+				   onfocus="ShowTip(pswcfmtip)" 
+				   required/>
+			<span id="pswcfmtip" class="hidden">
+				Passwords do not match.
+			</span>
 			<input type="submit" id="submit" class="input"
 			       name="submit" value="GET STARTED" />
 		</form>

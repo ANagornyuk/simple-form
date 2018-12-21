@@ -18,23 +18,27 @@ function ShowSignUp(){
 function ValidatePassword(){
 	let pswtip = document.getElementById('pswtip');
 	let regexp = /\w{6,}/
-	//\d+|\w+{6,}/;
 	pswtip.className = "visible";
 	if (regexp.test(document.getElementById('password').value)){
 		pswtip.className = "hidden";
 	}
-	// pswtip.innerHTML = document.getElementById('password').value;
-
-	// let input = document.getElementById('password');
-	// input.title = "Some text"
-	
-
+	if (document.getElementById('passwordcfm').value != null){
+		MatchPassword();		
+	}
+}
+function MatchPassword(){
+	let pswcfmtip = document.getElementById('pswcfmtip');
+	let passwordcfm = document.getElementById('passwordcfm');
+	let password = document.getElementById('password');
+	pswcfmtip.className = "visible";
+	if (password.value == passwordcfm.value){
+		pswcfmtip.className = "hidden";
+	}
+}
+function ShowTip(id){
+	id.className = "visible";
 
 }
-function ShowTip(){
-	document.getElementById('pswtip').className = "visible";
-
-}
-function HideTip(){
-	document.getElementById('pswtip').className = "hidden";
+function HideTip(id){
+	id.className = "hidden";
 }

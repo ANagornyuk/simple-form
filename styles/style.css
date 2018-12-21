@@ -78,6 +78,9 @@ span {
 	font-style:oblique;
 	color: #ffff1a;
 }
+/*span .alert {
+	color: #ff0000;
+}*/
 
 /*.input .tooltiptext {
   visibility: hidden;
