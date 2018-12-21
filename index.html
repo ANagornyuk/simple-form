@@ -24,8 +24,11 @@
 				   name="lname" placeholder="Last Name*" required/>
 			<input type="email" id="email" class="input" 
 				   name="email" placeholder="Email Address*" required/>
-			<input type="password" id="password" class="input" 
-				   name="password" placeholder="Set A Password*" required/>
+			<input type="password" id="password" class="input tooltiptext" 
+				   name="password" placeholder="Set A Password*" 
+				   oninput="ValidatePassword()" onblur="HideTip()" 
+				    title="kkk" required/>
+			<span id="pswtip" class="hidden">Tooltip text</span>
 			<input type="password" id="passwordcfm" class="input"
 				   name="passwordcfm" placeholder="Confirm password*" required/>
 			<input type="submit" id="submit" class="input"
@@ -34,9 +37,9 @@
 		<form id="loginForm" name="loginForm" class="hidden"
 			  action="" method="">
 			<legend>Log in</legend>
-			<input type="email" id="email" class="input"
+			<input type="email" id="email2" class="input"
 				   name="email" placeholder="Email" required/>
-			<input type="password" id="password" class="input"
+			<input type="password" id="password2" class="input"
 				   name="password" placeholder="Password" required/>
 			<input type="submit" id="submit" class="input"
 				   name="submit" value="Log in" />

@@ -15,3 +15,16 @@ function ShowSignUp(){
 	document.getElementById('signup').classList.add("checked");
 	
 }
+function ValidatePassword(){
+	document.getElementById('pswtip').className = "visible";
+
+	// let input = document.getElementById('password');
+	// input.title = "Some text"
+	// let regexp = /\w{6,}/;
+
+
+}
+function HideTip(){
+	document.getElementById('pswtip').className = "hidden";
+
+}
