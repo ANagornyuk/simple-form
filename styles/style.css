@@ -75,40 +75,24 @@
 span {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 16px;
-	font-style:oblique;
+	font-style: oblique;
 	color: #ffff1a;
 }
-/*span .alert {
-	color: #ff0000;
-}*/
-
-/*.input .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+#link:link, #link:visited {
+	background-color: #0066cc;
+  	color: white;
+  	padding: 14px 25px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-style: oblique;
+  	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  	color: #ffffe6;
 }
-.input .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+#link:hover, #link:active {
+	background-color: #3399ff;
 }
-.input:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}*/
+#centered {
+	margin: 25px auto;
+	width: 150px;
+}
