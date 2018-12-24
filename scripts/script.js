@@ -15,3 +15,30 @@ function ShowSignUp(){
 	document.getElementById('signup').classList.add("checked");
 	
 }
+function ValidatePassword(){
+	let pswtip = document.getElementById('pswtip');
+	let regexp = /\w{6,}/
+	pswtip.className = "visible";
+	if (regexp.test(document.getElementById('password').value)){
+		pswtip.className = "hidden";
+	}
+	if (document.getElementById('passwordcfm').value != null){
+		MatchPassword();		
+	}
+}
+function MatchPassword(){
+	let pswcfmtip = document.getElementById('pswcfmtip');
+	let passwordcfm = document.getElementById('passwordcfm');
+	let password = document.getElementById('password');
+	pswcfmtip.className = "visible";
+	if (password.value == passwordcfm.value){
+		pswcfmtip.className = "hidden";
+	}
+}
+function ShowTip(id){
+	id.className = "visible";
+
+}
+function HideTip(id){
+	id.className = "hidden";
+}
